@@ -17,7 +17,6 @@ function readFileAndParse(file) {
       const lines = yamlText.split('\n');
 
       if (lines.length >= 1) {
-        t
         if (lines[0].split(":") === "") { //Comprobar si el archivo esta vacio
           throw new Error("Archivo .yml vacio");
         }
